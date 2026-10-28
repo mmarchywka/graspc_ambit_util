@@ -1,0 +1,33 @@
+#  deep        -- always occupied in the CI model space
+#        hole        -- sometimes occupied (below Fermi level)
+#        particle    -- sometimes occupied (above Fermi level)
+#        high        -- never occupied in the CI model space
+
+#    Furthermore each orbital will appear in some of the following:
+#        core        -- below Fermi level (includes deep + hole)
+#        excited     -- above Fermi level (includes particle + high)
+#        valence  
+
+test cmd=readrwfn;fn=runs/Nav3/rwfn4f1;fflags=1
+test cmd=readrwfn;fn=runs/Nav3/rwfn3d1;fflags=1
+test cmd=readrwfn;fn=runs/Nav3/rwfn3s1;fflags=1
+test cmd=readrwfn;fn=runs/Nav3/rwfn4p6;fflags=1
+test cmd=readrwfn;fn=runs/Nav3/rwfn4p1;fflags=1
+test cmd=readrwfn;fn=runs/Nav3/rwfn4d1;fflags=1
+test cmd=readrwfn;fn=runs/Nav3/rwfn5f1;fflags=1
+test cmd=readrwfn;fn=runs/Nav3/rwfn5s1;fflags=1
+test cmd=readrwfn;fn=runs/Nav3/rwfn2s2;fflags=1
+test cmd=readrwfn;fn=runs/Nav3/rwfn3p1;fflags=1
+test cmd=readrwfn;fn=runs/Nav3/rwfn4s1;fflags=1
+test cmd=readrwfn;fn=runs/Nav3/rwfn5p1;fflags=1
+test cmd=readrwfn;fn=runs/Nav3/rwfn2p6;fflags=1
+test cmd=readrwfn;fn=runs/Nav3/rwfn4s2;fflags=1
+test cmd=sortrwfn
+test cmd=listrwfn;fn=runs/Nav3/wfn.out;fflags=1
+test cmd=rwfn2a;fflags=1
+test cmd=listrwfn;summary=1;fflags=1
+
+
+
+
+
